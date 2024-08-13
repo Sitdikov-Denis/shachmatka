@@ -1,0 +1,78 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.squares {
+  display: flex;
+  gap: 5px; /* Расстояние между квадратами 5px */
+  margin-bottom: 20px;
+}
+
+.square {
+  width: 30px; /* Ширина квадрата */
+  height: 30px; /* Высота квадрата */
+  background-color: #d3d3d3;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif; /* Шрифт Helvetica */
+  font-size: 12px; /* Размер шрифта 12px */
+  font-weight: 400; /* Толщина шрифта 400 */
+  line-height: 18px; /* Межстрочный интервал 18px */
+  text-align: center; /* Выравнивание текста по центру */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.square.selected {
+  background-color: #c4ea60;
+}
+
+.houses {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.houseContainer {
+  text-align: center;
+}
+
+.houseLabel {
+  margin-bottom: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #5B6573;
+}
+
+.house {
+  display: grid;
+  grid-template-columns: repeat(3, 13px);
+  grid-template-rows: repeat(10, 10px);
+  gap: 10px;
+  background-color: #e0e0e0;
+  padding: 10px;
+}
+
+.house.selected {
+  background-color: #BBED21;
+  transition: background-color 0.1s;
+}
+
+.house.selected .cell {
+  background-color: #D8FFB1;
+  transition: background-color 0.1s;
+}
+
+.cell {
+  width: 13px;
+  height: 10px;
+  background-color: white; /* Фоновый цвет белый */
+}

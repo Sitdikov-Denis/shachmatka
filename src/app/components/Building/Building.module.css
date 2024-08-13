@@ -1,0 +1,230 @@
+.container {
+  padding: 20px;
+}
+
+.buildingSchema {
+  display: "block";
+  border: 1px solid #E5E8EA;
+  padding: 0 30px 30px 30px;
+}
+
+.filters {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  font-family: Helvetica, Arial, sans-serif; /* Шрифт Helvetica */
+  font-size: 10px; /* Размер шрифта 12px */
+  font-weight: 400; /* Толщина шрифта 400 */
+  line-height: 15px;
+  color: #868D95;
+}
+
+.filterButton {
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+.selectedEntrance {
+  background-color: #BBED21;
+}
+
+.defaultButton {
+  background-color: #C6CDD3;
+}
+
+.floorDropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  background-color: #C6CDD3;
+}
+
+.floorDropdownList {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+  border: 1px solid #C6CDD3;
+  background-color: white;
+  z-index: 1000;
+}
+
+.floorDropdownItem {
+  padding: 5px;
+  cursor: pointer;
+  background-color: #C6CDD3;
+}
+
+.floorDropdownItem.selected {
+  background-color: lightgrey;
+}
+
+.roomDropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  background-color: #C6CDD3;
+}
+
+.roomDropdownList {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+  border: 1px solid #C6CDD3;
+  background-color: white;
+  z-index: 1000;
+}
+
+.roomDropdownItem {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.roomDropdownItem.selected {
+  background-color: lightgrey;
+}
+
+.buildingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.buildingRow {
+  display: flex;
+  gap: "3px"
+}
+
+.building {
+  display: grid;
+  flex-direction: column;
+  /* margin-right: 0; */
+  /* column-gap: 3px */
+  gap: 3px;
+}
+
+.fullWidthRow {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%; /* Это позволит строкам занимать всю ширину */
+}
+
+.rowLabel {
+  width: 60px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.rowCells {
+  display: flex;
+  flex-grow: 1; /* Это позволит ячейкам занимать всю оставшуюся ширину */
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  color: #5B6573;
+  width: 40px;
+  height: 30px;
+  background-color: #E5E8EA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.cell.selected {
+  background-color: #BBED21;
+}
+
+.cell.openGreater {
+  background-color: #6FCF97E5;
+}
+
+.cell.overdueGreater {
+  background-color: #EB575773;
+}
+
+
+.floorLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, Arial, sans-serif; /* Шрифт Helvetica */
+  font-size: 10px; /* Размер шрифта 12px */
+  font-weight: 400; /* Толщина шрифта 400 */
+  line-height: 15px; /* Межстрочный интервал 18px */
+  text-align: center; /* Выравнивание текста по центру */
+  color: #868D95;
+  text-align: center;
+  margin-right: 0px;
+  height: 30px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.approachLabels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.approachLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, Arial, sans-serif; /* Шрифт Helvetica */
+  font-size: 10px; /* Размер шрифта 12px */
+  font-weight: 400; /* Толщина шрифта 400 */
+  line-height: 15px; /* Межстрочный интервал 18px */
+  text-align: center; /* Выравнивание текста по центру */
+  color: #868D95;
+  text-align: center;
+  margin-right: 0px;
+  /* width: 40px; */
+  height: 30px;
+  margin: 0 30px 0 30px;
+  cursor: pointer;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 8.5px;
+  height: 5.3px;
+  margin-left: 5px;
+  background-image: url('../../images/Vector.svg');
+  background-size: cover;
+}

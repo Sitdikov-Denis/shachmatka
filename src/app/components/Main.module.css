@@ -1,0 +1,5 @@
+.main {
+    display: flex;
+    padding: 100px;
+    background-image: url('../images/background.jpg');
+}
